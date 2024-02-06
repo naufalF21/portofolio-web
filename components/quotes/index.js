@@ -11,7 +11,7 @@ export default function Quotes() {
 					<FaQuoteLeft size="26" />
 				</div>
 			</div>
-			<div className="border py-8">
+			<div className="border border-gray py-8">
 				<h2 className="text-center text-lg font-semibold">
 					Programming isn&apos;t about what you know; it&apos;s about what you can figure
 					out. -Chris Pine
