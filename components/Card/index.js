@@ -6,7 +6,7 @@ import Button from '../Button';
 
 export default function Card({ image, label, title, desc }) {
 	return (
-		<div className="divide-y border w-fit">
+		<div className="divide-y border w-fit text-white">
 			<Image src={cardImg} alt="card-image" />
 			<div className="p-3">
 				<span>HTML SCSS Python</span>
