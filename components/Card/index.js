@@ -1,10 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import cardImg from '@/public/images/Rectangle022.png';
 import Button from '../Button';
 
-export default function Card() {
+export default function Card({ image, label, title, desc }) {
 	return (
-		<div className="divide-y border">
+		<div className="divide-y border w-fit">
 			<Image src={cardImg} alt="card-image" />
 			<div className="p-3">
 				<span>HTML SCSS Python</span>
