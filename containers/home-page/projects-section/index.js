@@ -6,7 +6,7 @@ import projects from '@/data/projects';
 
 export default function ProjectsSection() {
 	return (
-		<div className="text-white py-10">
+		<div className="text-white py-8">
 			<div className="flex flex-row justify-between">
 				<div className="flex flex-row items-center gap-5 w-1/3">
 					<h2 className="text-3xl font-semibold">Projects</h2>

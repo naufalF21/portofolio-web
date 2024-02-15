@@ -14,7 +14,7 @@ export default function ExperienceSection() {
 	return (
 		<section className="text-white mt-16">
 			<div className="flex flex-row items-center gap-5">
-				<h2 className="text-3xl font-semibold">Experience</h2>
+				<h2 className="text-3xl font-semibold">Experiences</h2>
 				<hr className="w-1/4 text-primary border" />
 			</div>
 			<div className="flex flex-row py-14 gap-10">
