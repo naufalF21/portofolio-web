@@ -1,4 +1,5 @@
 import { Fira_Code } from 'next/font/google';
+import NextTopLoader from 'nextjs-toploader';
 import './globals.css';
 
 const firaCode = Fira_Code({ subsets: ['latin'] });
@@ -17,7 +18,10 @@ export default function RootLayout({ children }) {
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
 				<link rel="manifest" href="/favicon/site.webmanifest" />
 			</head>
-			<body className={firaCode.className}>{children}</body>
+			<body className={firaCode.className}>
+				<NextTopLoader showSpinner={false} color="#C778DD" />
+				{children}
+			</body>
 		</html>
 	);
 }
