@@ -20,10 +20,10 @@ export default function ExperienceSection() {
 			<div className="flex flex-row py-14 gap-10">
 				<div className="w-[2px] h-72 bg-white"></div>
 				<div className="flex flex-col w-full mt-6">
-					<div className="flex flex-row justify-between ">
-						<span>Full Stack Developer Intern</span>
+					<div className="flex flex-row justify-between">
+						<span>Algostudio - Full Stack Developer Intern</span>
 						<span>
-							<i>Summer - Autumn</i> 2023
+							<i>Jul - Okt</i> 2023
 						</span>
 					</div>
 					<ul className="py-6 flex flex-col gap-3 ps-6">
