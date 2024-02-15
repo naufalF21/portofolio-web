@@ -18,7 +18,7 @@ export default function ExperienceSection() {
 				<hr className="w-1/4 text-primary border" />
 			</div>
 			<div className="flex flex-row py-14 gap-10">
-				<div className="w-[2px] h-72 bg-white"></div>
+				<div className="border-s-2 border-white"></div>
 				<div className="flex flex-col w-full mt-6">
 					<div className="flex flex-row justify-between">
 						<span>Algostudio - Full Stack Developer Intern</span>
