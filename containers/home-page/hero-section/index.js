@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '../Button';
+import Button from '@/components/Button';
 import jumbotronImg from '@/public/images/jumbotron.png';
 
-export default function Jumbotron() {
+export default function HeroSection() {
 	return (
 		<div className="text-white flex flex-row items-center justify-between gap-20 h-screen">
 			<div className="flex flex-col gap-8">

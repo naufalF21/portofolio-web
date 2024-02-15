@@ -5,7 +5,7 @@ import { FaQuoteRight } from 'react-icons/fa';
 
 export default function Quotes() {
 	return (
-		<div className="text-white mb-20 px-6">
+		<div className="text-white px-6">
 			<div className="relative top-4 left-6 flex justify-start">
 				<div className="bg-secondary z-10 px-2">
 					<FaQuoteLeft size="26" />
