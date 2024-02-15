@@ -9,7 +9,7 @@ import { MdOutlineLocalPhone } from 'react-icons/md';
 
 export default function Header() {
 	return (
-		<header className="fixed text-white py-7 border-b w-full bg-secondary top-0">
+		<header className="fixed text-white py-7 border-b w-full bg-secondary top-0 z-50">
 			<div className="fixed left-6 top-20 flex flex-col items-center gap-4">
 				<div className="w-[.8px] h-[35vh] bg-white"></div>
 				<div className="flex flex-col items-center gap-4 text-gray ">
