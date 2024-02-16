@@ -6,6 +6,7 @@ import ExperienceSection from '@/containers/home-page/experience-section';
 import Quotes from '@/components/Quotes';
 import ProjectsSection from '@/containers/home-page/projects-section';
 import EducationSection from '@/containers/home-page/education-section';
+import SkillsSection from '@/containers/home-page/skills-section';
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 					<ExperienceSection />
 					<ProjectsSection />
 					<EducationSection />
+					<SkillsSection />
 				</div>
 			</main>
 		</>
