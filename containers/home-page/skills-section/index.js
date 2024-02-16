@@ -18,11 +18,14 @@ export default function SkillsSection() {
 				<h3 className="text-2xl">Languages</h3>
 				<div className="pt-5 flex flex-row gap-8">
 					<div className="flex flex-col items-center gap-2">
-						<IoLogoJavascript size="80" className="text-[#FFDF00]" />
+						<IoLogoJavascript
+							size="80"
+							className="text-[#FFDF00] opacity-50 hover:opacity-100"
+						/>
 						<label className="text-xs">Javascript</label>
 					</div>
 					<div className="flex flex-col items-center gap-2">
-						<SiPhp size="80" className="text-[#4F5B93]" />
+						<SiPhp size="80" className="text-[#4F5B93] opacity-50 hover:opacity-100" />
 						<label className="text-xs">PHP</label>
 					</div>
 				</div>
@@ -32,7 +35,10 @@ export default function SkillsSection() {
 				<div className="pt-5 flex flex-row gap-8">
 					{webtech.map((item, index) => (
 						<div className="flex flex-col items-center gap-2" key={index}>
-							<item.icon size="80" className={item.classname} />
+							<item.icon
+								size="80"
+								className={item.classname + ' opacity-50 hover:opacity-100'}
+							/>
 							<label className="text-xs">{item.name}</label>
 						</div>
 					))}
@@ -42,7 +48,12 @@ export default function SkillsSection() {
 				<h3 className="text-2xl">Databases</h3>
 				<div className="pt-5 flex flex-row gap-8">
 					<div className="flex flex-col items-center gap-2">
-						<Image src={logoMySQL} alt="logo-mysql" width="90" />
+						<Image
+							src={logoMySQL}
+							alt="logo-mysql"
+							width="90"
+							className="opacity-50 hover:opacity-100"
+						/>
 						<label className="text-xs">MySQL</label>
 					</div>
 				</div>
@@ -52,7 +63,10 @@ export default function SkillsSection() {
 				<div className="pt-5 flex flex-row gap-8">
 					{devops.map((item, index) => (
 						<div className="flex flex-col items-center gap-2" key={index}>
-							<item.icon size="80" className={item.classname} />
+							<item.icon
+								size="80"
+								className={item.classname + ' opacity-50 hover:opacity-100'}
+							/>
 							<label className="text-xs">{item.name}</label>
 						</div>
 					))}
