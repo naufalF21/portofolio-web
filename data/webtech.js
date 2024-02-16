@@ -5,6 +5,8 @@ import { SiNextdotjs } from 'react-icons/si';
 import { DiJqueryLogo } from 'react-icons/di';
 import { FaReact } from 'react-icons/fa';
 import { FaVuejs } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
+import { FaBootstrap } from 'react-icons/fa';
 
 const webtech = [
 	{
@@ -41,6 +43,16 @@ const webtech = [
 		icon: FaVuejs,
 		name: 'Vue',
 		classname: 'text-[#41b883]',
+	},
+	{
+		icon: SiTailwindcss,
+		name: 'Tailwind CSS',
+		classname: 'text-[#06b6d4]',
+	},
+	{
+		icon: FaBootstrap,
+		name: 'Bootstrap',
+		classname: 'text-[#563d7c]',
 	},
 ];
 
