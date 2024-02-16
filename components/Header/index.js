@@ -30,7 +30,7 @@ export default function Header() {
 					</Link>
 				</div>
 			</div>
-			<div className="max-w-[1024px] mx-auto flex justify-between">
+			<div className="max-w-[1024px] mx-auto flex flex-row justify-between">
 				<h2 className="font-semibold text-base">Naufal Firman</h2>
 				<Navbar />
 			</div>

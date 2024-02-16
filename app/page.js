@@ -8,6 +8,7 @@ import ProjectsSection from '@/containers/home-page/projects-section';
 import EducationSection from '@/containers/home-page/education-section';
 import SkillsSection from '@/containers/home-page/skills-section';
 import ContactsSection from '@/containers/home-page/contacts-section';
+import Footer from '@/components/Footer';
 
 export default function Home() {
 	return (
@@ -24,6 +25,7 @@ export default function Home() {
 					<ContactsSection />
 				</div>
 			</main>
+			<Footer />
 		</>
 	);
 }
