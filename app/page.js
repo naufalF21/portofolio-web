@@ -7,6 +7,7 @@ import Quotes from '@/components/Quotes';
 import ProjectsSection from '@/containers/home-page/projects-section';
 import EducationSection from '@/containers/home-page/education-section';
 import SkillsSection from '@/containers/home-page/skills-section';
+import ContactsSection from '@/containers/home-page/contacts-section';
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 					<ProjectsSection />
 					<EducationSection />
 					<SkillsSection />
+					<ContactsSection />
 				</div>
 			</main>
 		</>

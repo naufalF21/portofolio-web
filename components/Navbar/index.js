@@ -32,7 +32,7 @@ export default function Navbar() {
 						<span className="text-primary">#</span>
 						<Link
 							href={item.link}
-							className={`text-gray hover:text-white hover:font-semibold ${
+							className={`text-gray hover:text-white hover:border-b-2 pb-1 ${
 								pathname === item.link ? 'text-white font-semibold' : ''
 							}`}
 						>
