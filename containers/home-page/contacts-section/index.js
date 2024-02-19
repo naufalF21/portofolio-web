@@ -6,12 +6,12 @@ import Link from 'next/link';
 
 export default function ContactsSection() {
 	return (
-		<div className="text-white my-16">
+		<div className="text-white my-16 px-4 lg:px-0">
 			<div className="flex flex-row items-center gap-5 mb-10">
 				<h2 className="text-3xl font-semibold">Contacts</h2>
 				<hr className="w-1/4 text-primary border" />
 			</div>
-			<div className="flex flex-row justify-between gap-52">
+			<div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-52">
 				<p className="text-base">
 					I&apos;m{' '}
 					<span className="text-primary">

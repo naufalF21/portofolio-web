@@ -21,11 +21,11 @@ export default function Home() {
 					<ExperienceSection />
 					<ProjectsSection />
 					<EducationSection />
-					{/* <SkillsSection />
-					<ContactsSection /> */}
+					<SkillsSection />
+					<ContactsSection />
 				</div>
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

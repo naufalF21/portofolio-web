@@ -8,9 +8,9 @@ import Link from 'next/link';
 
 export default function Footer() {
 	return (
-		<footer className="text-white border-t">
+		<footer className="text-white border-t px-4 lg:px-0">
 			<div className="max-w-[1024px] mx-auto py-4">
-				<div className="flex flex-row justify-between mt-4">
+				<div className="flex flex-col gap-6 md:gap-0 md:flex-row justify-between mt-4">
 					<div className="flex flex-col gap-3">
 						<h2 className="font-semibold text-base">Naufal Firman</h2>
 						<span className="text-sm">Fullstack Developer.</span>
