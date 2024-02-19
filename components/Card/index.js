@@ -2,14 +2,13 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import cardImg from '@/public/images/project-1.png';
 import Button from '../Button';
 
 export default function Card({ image, technology, title, period, description }) {
 	const [isReadMore] = useState(true);
 
 	return (
-		<div className={`border text-white w-80 flex flex-col`}>
+		<div className={`border text-white w-full lg:w-80 flex flex-col`}>
 			<div className="divide-y">
 				<Image src={image} alt="card-image" className="bg-cover" />
 				<div className="p-3 text-sm">

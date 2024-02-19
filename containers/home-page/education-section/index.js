@@ -6,7 +6,7 @@ import courses from '@/data/courses';
 
 export default function EducationSection() {
 	return (
-		<section className="text-white mt-16">
+		<section className="text-white mt-16 px-4 lg:px-0">
 			<div className="flex flex-row items-center gap-5">
 				<h2 className="text-3xl font-semibold">Educations</h2>
 				<hr className="w-1/4 text-primary border" />
