@@ -15,17 +15,17 @@ export default function Home() {
 		<>
 			<Header />
 			<main>
-				<div className="max-w-[1024px] mx-auto ">
+				<div className="lg:max-w-[1024px] lg:mx-auto ">
 					<HeroSection />
-					<Quotes />
+					{/* <Quotes />
 					<ExperienceSection />
 					<ProjectsSection />
 					<EducationSection />
 					<SkillsSection />
-					<ContactsSection />
+					<ContactsSection /> */}
 				</div>
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

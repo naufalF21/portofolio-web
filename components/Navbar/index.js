@@ -2,38 +2,21 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import nav from '@/data/nav';
 
 export default function Navbar() {
 	const pathname = usePathname();
 
-	const nav = [
-		{
-			name: 'home',
-			link: '/',
-		},
-		{
-			name: 'projects',
-			link: '/projects',
-		},
-		{
-			name: 'about-me',
-			link: '/about-me',
-		},
-		{
-			name: 'contacts',
-			link: '/contacts',
-		},
-	];
 	return (
 		<nav>
-			<ul className="flex gap-8">
+			<ul className="hidden lg:flex gap-8">
 				{nav.map((item, index) => (
 					<li key={index}>
 						<span className="text-primary">#</span>
 						<Link
 							href={item.link}
 							className={`text-gray hover:text-white hover:border-b-2 pb-1 ${
-								pathname === item.link ? 'text-white font-semibold' : ''
+								pathname === item.link ? 'text-white font-semibold capitalize' : ''
 							}`}
 						>
 							{item.name}

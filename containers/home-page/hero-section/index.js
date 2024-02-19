@@ -7,10 +7,11 @@ import jumbotronImg from '@/public/images/jumbotron.png';
 
 export default function HeroSection() {
 	return (
-		<div className="text-white flex flex-row items-center justify-between gap-20 h-screen">
-			<div className="flex flex-col gap-8">
+		<div className="text-white flex flex-col lg:flex-row items-center justify-between gap-20 lg:h-screen px-6 pb-10 lg:px-0">
+			<div className="flex flex-col gap-8 mt-32 lg:mt-0">
 				<h2 className="text-3xl font-semibold leading-normal">
-					Naufal Firman is a <span className="text-primary">Front-end Developer</span>
+					Naufal Firman is a{' '}
+					<span className="text-primary">Web Designer and Front-end Developer</span>
 				</h2>
 				<p className="text-base">
 					He crafts responsive websites where technologies meet creativity. To explore
@@ -20,7 +21,7 @@ export default function HeroSection() {
 				<Button text="Let's talk" />
 			</div>
 			<div>
-				<Image src={jumbotronImg} alt="jumbotron-img" height="1200" />
+				<Image src={jumbotronImg} alt="jumbotron-img" className="lg:w-[70rem]" />
 				<div className="text-gray flex flex-row items-center border py-1 px-2 gap-2">
 					<div className="w-[14px] h-[14px] bg-primary"></div>
 					<p>
