@@ -7,8 +7,8 @@ import jumbotronImg from '@/public/images/jumbotron.png';
 
 export default function HeroSection() {
 	return (
-		<div className="text-white flex flex-col md:flex-row items-center justify-between gap-20 md:h-screen px-6 pb-10 lg:px-0">
-			<div className="flex flex-col gap-8 mt-32 md:mt-0">
+		<div className="text-white flex flex-col md:flex-row items-center md:items-start lg:items-center justify-between gap-20 lg:h-screen pt-32 md:pt-36 px-6 pb-10 lg:py-0">
+			<div className="flex flex-col gap-8">
 				<h2 className="text-3xl font-semibold leading-normal">
 					Naufal Firman is a{' '}
 					<span className="text-primary">Web Designer and Front-end Developer</span>
@@ -21,7 +21,7 @@ export default function HeroSection() {
 				<Button text="Let's talk" />
 			</div>
 			<div>
-				<Image src={jumbotronImg} alt="jumbotron-img" className="md:w-[70rem]" />
+				<Image src={jumbotronImg} alt="jumbotron-img" className="md:w-[80rem]" />
 				<div className="text-gray flex flex-row items-center border py-1 px-2 gap-2">
 					<div className="w-[14px] h-[14px] bg-primary"></div>
 					<p>

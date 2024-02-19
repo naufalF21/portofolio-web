@@ -15,11 +15,11 @@ export default function Home() {
 		<>
 			<Header />
 			<main>
-				<div className="lg:max-w-[1024px] lg:mx-auto ">
+				<div className="lg:max-w-[1024px] lg:mx-auto overflow-x-hidden">
 					<HeroSection />
-					{/* <Quotes />
+					<Quotes />
 					<ExperienceSection />
-					<ProjectsSection />
+					{/* <ProjectsSection />
 					<EducationSection />
 					<SkillsSection />
 					<ContactsSection /> */}
