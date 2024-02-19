@@ -7,7 +7,7 @@ import jumbotronImg from '@/public/images/jumbotron.png';
 
 export default function HeroSection() {
 	return (
-		<div className="text-white flex flex-col md:flex-row items-center md:items-start lg:items-center justify-between gap-20 lg:h-screen pt-32 md:pt-36 px-6 pb-10 lg:py-0">
+		<div className="text-white flex flex-col md:flex-row items-center md:items-start lg:items-center justify-between gap-20 lg:h-screen pt-32 md:pt-36 px-6 pb-10 lg:py-0 lg:px-0">
 			<div className="flex flex-col gap-8">
 				<h2 className="text-3xl font-semibold leading-normal">
 					Naufal Firman is a{' '}
