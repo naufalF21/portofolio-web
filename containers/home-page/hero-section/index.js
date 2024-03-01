@@ -21,7 +21,7 @@ export default function HeroSection() {
 				<Button text="Let's talk" />
 			</div>
 			<div>
-				<Image src={jumbotronImg} alt="jumbotron-img" className="md:w-[80rem]" />
+				<Image src={jumbotronImg} alt="jumbotron-img" className="md:w-[80rem]" priority />
 				<div className="text-gray flex flex-row items-center border py-1 px-2 gap-2">
 					<div className="w-[14px] h-[14px] bg-primary"></div>
 					<p>

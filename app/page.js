@@ -1,14 +1,16 @@
 'use client';
 
 import Header from '@/components/Header';
-import HeroSection from '@/containers/home-page/hero-section';
-import ExperienceSection from '@/containers/home-page/experience-section';
-import Quotes from '@/components/Quotes';
-import ProjectsSection from '@/containers/home-page/projects-section';
-import EducationSection from '@/containers/home-page/education-section';
-import SkillsSection from '@/containers/home-page/skills-section';
-import ContactsSection from '@/containers/home-page/contacts-section';
 import Footer from '@/components/Footer';
+import dynamic from 'next/dynamic';
+
+const HeroSection = dynamic(() => import('@/containers/home-page/hero-section'));
+const Quotes = dynamic(() => import('@/components/Quotes'));
+const ExperienceSection = dynamic(() => import('@/containers/home-page/experience-section'));
+const ProjectsSection = dynamic(() => import('@/containers/home-page/projects-section'));
+const EducationSection = dynamic(() => import('@/containers/home-page/education-section'));
+const SkillsSection = dynamic(() => import('@/containers/home-page/skills-section'));
+const ContactsSection = dynamic(() => import('@/containers/home-page/contacts-section'));
 
 export default function Home() {
 	return (

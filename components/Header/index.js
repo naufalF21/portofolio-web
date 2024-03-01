@@ -8,7 +8,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
 import { MdOutlineLocalPhone } from 'react-icons/md';
-import { motion, AnimatePresence } from 'framer-motion';
+import { LazyMotion, domAnimation, m, AnimatePresence } from 'framer-motion';
 import nav from '@/data/nav';
 
 export default function Header() {
@@ -67,12 +67,12 @@ export default function Header() {
 	};
 
 	return (
-		<>
+		<LazyMotion features={domAnimation}>
 			<header className="fixed text-white lg:py-7 border-b w-full bg-secondary top-0 z-40">
-				<div className="fixed left-6 top-20 hidden lg:flex flex-col items-center gap-4">
+				<div className="fixed left-6 top-20 lg:mt-[5px] hidden lg:flex flex-col items-center gap-4">
 					<div className="w-[.8px] h-[35vh] bg-white"></div>
 					<div className="flex flex-col items-center gap-4 text-gray ">
-						<motion.a
+						<m.a
 							href="https://www.linkedin.com/in/naufal-firman/"
 							target="_blank"
 							className="hover:text-white"
@@ -80,8 +80,8 @@ export default function Header() {
 							whileTap={{ scale: 0.9 }}
 						>
 							<FaLinkedin size="30" />
-						</motion.a>
-						<motion.a
+						</m.a>
+						<m.a
 							href="mailto:naufalfirman098@gmail.com"
 							target="_blank"
 							className="hover:text-white"
@@ -89,8 +89,8 @@ export default function Header() {
 							whileTap={{ scale: 0.9 }}
 						>
 							<IoIosMail size="34" />
-						</motion.a>
-						<motion.a
+						</m.a>
+						<m.a
 							href="https://github.com/naufalF21"
 							target="_blank"
 							className="hover:text-white"
@@ -98,8 +98,8 @@ export default function Header() {
 							whileTap={{ scale: 0.9 }}
 						>
 							<FaGithub size="28" />
-						</motion.a>
-						<motion.a
+						</m.a>
+						<m.a
 							href="tel:+6289617404827"
 							target="_blank"
 							className="hover:text-white"
@@ -107,7 +107,7 @@ export default function Header() {
 							whileTap={{ scale: 0.9 }}
 						>
 							<MdOutlineLocalPhone size="32" />
-						</motion.a>
+						</m.a>
 					</div>
 				</div>
 				<div className="lg:max-w-[1024px] mx-auto flex flex-row justify-between items-center px-4 py-5 lg:px-0 lg:py-0">
@@ -115,13 +115,13 @@ export default function Header() {
 					<Navbar />
 					{/* mobile nav */}
 					<div className="text-white lg:hidden">
-						<motion.button
+						<m.button
 							className="cursor-pointer font-medium uppercase text-white"
 							onClick={() => setOpen(!open)}
 							whileTap={{ scale: 0.9 }}
 						>
 							Menu
-						</motion.button>
+						</m.button>
 					</div>
 					{/* end mobile nav */}
 				</div>
@@ -129,7 +129,7 @@ export default function Header() {
 			{/* mobile nav item */}
 			<AnimatePresence>
 				{open && (
-					<motion.div
+					<m.div
 						variants={menuVars}
 						initial="initial"
 						animate="animate"
@@ -141,17 +141,17 @@ export default function Header() {
 							<Navbar />
 							{/* mobile nav */}
 							<div className="lg:hidden">
-								<motion.button
+								<m.button
 									className="cursor-pointer font-medium uppercase"
 									onClick={() => setOpen(!open)}
 									whileTap={{ scale: 0.9 }}
 								>
 									Close
-								</motion.button>
+								</m.button>
 							</div>
 							{/* end mobile nav */}
 						</div>
-						<motion.div
+						<m.div
 							className="flex flex-col gap-4 justify-center items-center h-full"
 							variants={containerVars}
 							initial="initial"
@@ -160,7 +160,7 @@ export default function Header() {
 						>
 							{nav.map((item, index) => (
 								<div key={index} className="overflow-hidden">
-									<motion.div
+									<m.div
 										className="text-4xl text-black uppercase"
 										variants={mobileNavLinkVars}
 									>
@@ -175,18 +175,18 @@ export default function Header() {
 										>
 											{item.name}
 										</Link>
-									</motion.div>
+									</m.div>
 								</div>
 							))}
-						</motion.div>
-						<motion.div
+						</m.div>
+						<m.div
 							variants={containerVars}
 							initial="initial"
 							animate="open"
 							exit="initial"
 						>
 							<div className="overflow-hidden">
-								<motion.div
+								<m.div
 									className="flex flex-row items-center gap-8 text-secondary justify-center"
 									variants={mobileNavLinkVars}
 								>
@@ -202,13 +202,13 @@ export default function Header() {
 									<Link href="tel:+6289617404827">
 										<MdOutlineLocalPhone size="42" />
 									</Link>
-								</motion.div>
+								</m.div>
 							</div>
-						</motion.div>
-					</motion.div>
+						</m.div>
+					</m.div>
 				)}
 			</AnimatePresence>
 			{/* end mobile nav item */}
-		</>
+		</LazyMotion>
 	);
 }

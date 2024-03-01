@@ -1,19 +1,27 @@
-import { motion } from 'framer-motion';
+'use client';
+
+import { LazyMotion, domAnimation, m } from 'framer-motion';
 import { useState } from 'react';
 
 export default function AnimatedLink({ title }) {
 	const [isHovered, setHovered] = useState(false);
 	return (
-		<motion.div
-			className="relative cursor-pointer overflow-hidden"
-			onMouseEnter={() => setHovered(true)}
-			onMouseLeave={() => setHovered(false)}
-		>
-			<AnimatedWord title={title} animation={letterAnimation} isHovered={isHovered} />
-			<div className="absolute top-0">
-				<AnimatedWord title={title} animation={letterAnimationTwo} isHovered={isHovered} />
-			</div>
-		</motion.div>
+		<LazyMotion features={domAnimation}>
+			<m.div
+				className="relative cursor-pointer overflow-hidden"
+				onMouseEnter={() => setHovered(true)}
+				onMouseLeave={() => setHovered(false)}
+			>
+				<AnimatedWord title={title} animation={letterAnimation} isHovered={isHovered} />
+				<div className="absolute top-0">
+					<AnimatedWord
+						title={title}
+						animation={letterAnimationTwo}
+						isHovered={isHovered}
+					/>
+				</div>
+			</m.div>
+		</LazyMotion>
 	);
 }
 
@@ -60,25 +68,27 @@ const letterAnimationTwo = {
 
 const AnimatedWord = ({ title, animation, isHovered }) => {
 	return (
-		<motion.span
-			variants={titleAnimation}
-			initial="rest"
-			animate={isHovered ? 'hover' : 'rest'}
-			className="relative whitespace-nowrap text-white font-medium"
-		>
-			{title.split('').map((character, i) =>
-				character === ' ' ? (
-					<span key={i}>&nbsp;</span>
-				) : (
-					<motion.span
-						key={i}
-						variants={animation}
-						className="relative inline-block whitespace-nowrap"
-					>
-						{character}
-					</motion.span>
-				)
-			)}
-		</motion.span>
+		<LazyMotion features={domAnimation}>
+			<m.span
+				variants={titleAnimation}
+				initial="rest"
+				animate={isHovered ? 'hover' : 'rest'}
+				className="relative whitespace-nowrap text-white font-medium"
+			>
+				{title.split('').map((character, i) =>
+					character === ' ' ? (
+						<span key={i}>&nbsp;</span>
+					) : (
+						<m.span
+							key={i}
+							variants={animation}
+							className="relative inline-block whitespace-nowrap"
+						>
+							{character}
+						</m.span>
+					)
+				)}
+			</m.span>
+		</LazyMotion>
 	);
 };
