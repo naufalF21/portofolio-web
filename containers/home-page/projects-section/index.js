@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 			<div className="flex flex-row justify-between">
 				<div className="flex flex-row items-center gap-5 w-1/3">
 					<h2 className="text-3xl font-semibold">Projects</h2>
-					<hr className="w-full text-primary border" />
+					<hr className="hidden md:block w-full text-primary border" />
 				</div>
 				<Button text="View all" />
 			</div>

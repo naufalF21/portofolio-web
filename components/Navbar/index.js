@@ -3,15 +3,16 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import nav from '@/data/nav';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
 	const pathname = usePathname();
 
 	return (
 		<nav>
-			<ul className="hidden lg:flex gap-8">
+			<ul className="hidden lg:flex gap-10">
 				{nav.map((item, index) => (
-					<li key={index}>
+					<motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
 						<span className="text-primary">#</span>
 						<Link
 							href={item.link}
@@ -21,7 +22,7 @@ export default function Navbar() {
 						>
 							{item.name}
 						</Link>
-					</li>
+					</motion.li>
 				))}
 			</ul>
 		</nav>

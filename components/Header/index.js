@@ -11,6 +11,7 @@ import { MdOutlineLocalPhone } from 'react-icons/md';
 import { CgMenuRight } from 'react-icons/cg';
 import { IoMdClose } from 'react-icons/io';
 import nav from '@/data/nav';
+import { motion } from 'framer-motion';
 
 export default function Header() {
 	const [open, setOpen] = useState(false);
@@ -26,21 +27,42 @@ export default function Header() {
 				<div className="fixed left-6 top-20 hidden lg:flex flex-col items-center gap-4">
 					<div className="w-[.8px] h-[35vh] bg-white"></div>
 					<div className="flex flex-col items-center gap-4 text-gray ">
-						<Link
+						<motion.a
 							href="https://www.linkedin.com/in/naufal-firman/"
+							target="_blank"
 							className="hover:text-white"
+							whileHover={{ scale: 1.2 }}
+							whileTap={{ scale: 0.9 }}
 						>
 							<FaLinkedin size="30" />
-						</Link>
-						<Link href="mailto:naufalfirman098@gmail.com" className="hover:text-white">
+						</motion.a>
+						<motion.a
+							href="mailto:naufalfirman098@gmail.com"
+							target="_blank"
+							className="hover:text-white"
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
 							<IoIosMail size="34" />
-						</Link>
-						<Link href="https://github.com/naufalF21" className="hover:text-white">
+						</motion.a>
+						<motion.a
+							href="https://github.com/naufalF21"
+							target="_blank"
+							className="hover:text-white"
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
 							<FaGithub size="28" />
-						</Link>
-						<Link href="tel:+6289617404827" className="hover:text-white">
+						</motion.a>
+						<motion.a
+							href="tel:+6289617404827"
+							target="_blank"
+							className="hover:text-white"
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+						>
 							<MdOutlineLocalPhone size="32" />
-						</Link>
+						</motion.a>
 					</div>
 				</div>
 				<div className="lg:max-w-[1024px] mx-auto flex flex-row justify-between items-center px-4 py-5 lg:px-0 lg:py-0">
@@ -48,11 +70,13 @@ export default function Header() {
 					<Navbar />
 					{/* mobile nav */}
 					<div className="text-white lg:hidden">
-						<div>
-							<button className="cursor-pointer" onClick={() => setOpen(!open)}>
-								{open ? <IoMdClose size="38" /> : <CgMenuRight size="38" />}
-							</button>
-						</div>
+						<motion.button
+							className="cursor-pointer"
+							onClick={() => setOpen(!open)}
+							whileTap={{ scale: 0.9 }}
+						>
+							{open ? <IoMdClose size="38" /> : <CgMenuRight size="38" />}
+						</motion.button>
 					</div>
 					{/* end mobile nav */}
 				</div>
