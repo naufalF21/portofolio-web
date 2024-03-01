@@ -3,6 +3,11 @@
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import projects from '@/data/projects';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
+import 'swiper/css';
+import './styles.css';
 
 export default function ProjectsSection() {
 	return (
@@ -14,18 +19,40 @@ export default function ProjectsSection() {
 				</div>
 				<Button text="View all" />
 			</div>
-			<div className="flex flex-col md:flex-row gap-10 lg:gap-0 justify-between mt-10">
+			<Swiper
+				className="flex flex-col md:flex-row gap-10 justify-between mt-10"
+				spaceBetween={50}
+				pagination={{
+					dynamicBullets: true,
+				}}
+				modules={[Pagination]}
+				breakpoints={{
+					640: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 3,
+						spaceBetween: 40,
+					},
+					1024: {
+						slidesPerView: 3,
+						spaceBetween: 50,
+					},
+				}}
+			>
 				{projects.map((item, index) => (
-					<Card
-						key={index}
-						image={item.image}
-						technology={item.technology}
-						title={item.title}
-						period={item.period}
-						description={item.description}
-					/>
+					<SwiperSlide key={index} className="pb-10">
+						<Card
+							image={item.image}
+							technology={item.technology}
+							title={item.title}
+							period={item.period}
+							description={item.description}
+						/>
+					</SwiperSlide>
 				))}
-			</div>
+			</Swiper>
 		</div>
 	);
 }
