@@ -1,14 +1,14 @@
 const nav = [
 	{
-		name: 'home',
+		name: 'What I did',
 		link: '/',
 	},
 	{
-		name: 'projects',
+		name: 'How it works',
 		link: '/projects',
 	},
 	{
-		name: 'contacts',
+		name: 'contact',
 		link: '/contacts',
 	},
 	{

@@ -3,26 +3,23 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import nav from '@/data/nav';
-import { motion } from 'framer-motion';
+import AnimatedLink from '../AnimatedLink';
 
 export default function Navbar() {
 	const pathname = usePathname();
 
 	return (
 		<nav>
-			<ul className="hidden lg:flex gap-10">
+			<ul className="hidden lg:flex gap-10 uppercase">
 				{nav.map((item, index) => (
-					<motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-						<span className="text-primary">#</span>
+					<li key={index} className="flex flex-col relative">
 						<Link
 							href={item.link}
-							className={`text-gray hover:text-white hover:border-b-2 pb-1 ${
-								pathname === item.link ? 'text-white font-semibold capitalize' : ''
-							}`}
+							className={pathname === item.link ? 'border-b border-primary pb-1' : ''}
 						>
-							{item.name}
+							<AnimatedLink title={item.name} />
 						</Link>
-					</motion.li>
+					</li>
 				))}
 			</ul>
 		</nav>
