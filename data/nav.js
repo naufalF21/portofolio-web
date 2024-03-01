@@ -1,10 +1,10 @@
 const nav = [
 	{
-		name: 'What I did',
+		name: 'Home',
 		link: '/',
 	},
 	{
-		name: 'How it works',
+		name: 'Projects',
 		link: '/projects',
 	},
 	{
