@@ -9,7 +9,7 @@ export default function ContactsSection() {
 	return (
 		<div className="text-white my-16 px-4 lg:px-0">
 			<Reveal width="fit-content">
-				<div className="flex flex-row items-center gap-5 mb-10 w-96">
+				<div className="flex flex-row items-center gap-5 mb-10 md:w-96">
 					<h2 className="text-3xl font-semibold">Contacts</h2>
 					<hr className="hidden md:block w-full text-primary border" />
 				</div>

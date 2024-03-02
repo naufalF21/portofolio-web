@@ -8,7 +8,7 @@ export default function ExperienceSection() {
 	return (
 		<section className="text-white mt-16 px-4 lg:px-0">
 			<Reveal width="fit-content">
-				<div className="flex flex-row items-center gap-5 w-96">
+				<div className="flex flex-row items-center gap-5 md:w-96">
 					<h2 className="text-3xl font-semibold">Experiences</h2>
 					<hr className="hidden md:block w-full text-primary border" />
 				</div>
