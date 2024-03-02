@@ -8,7 +8,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
 import { MdOutlineLocalPhone } from 'react-icons/md';
-import { LazyMotion, domAnimation, m, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import nav from '@/data/nav';
 
 export default function Header() {
@@ -67,7 +67,7 @@ export default function Header() {
 	};
 
 	return (
-		<LazyMotion features={domAnimation}>
+		<>
 			<header className="fixed text-white lg:py-7 border-b w-full bg-secondary top-0 z-40">
 				<div className="fixed left-6 top-20 lg:mt-[5px] hidden lg:flex flex-col items-center gap-4">
 					<div className="w-[.8px] h-[35vh] bg-white"></div>
@@ -209,6 +209,6 @@ export default function Header() {
 				)}
 			</AnimatePresence>
 			{/* end mobile nav item */}
-		</LazyMotion>
+		</>
 	);
 }

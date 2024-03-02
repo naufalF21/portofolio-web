@@ -3,6 +3,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import dynamic from 'next/dynamic';
+import { LazyMotion, domAnimation } from 'framer-motion';
 
 const HeroSection = dynamic(() => import('@/containers/home-page/hero-section'));
 const Quotes = dynamic(() => import('@/components/Quotes'));
@@ -14,7 +15,7 @@ const ContactsSection = dynamic(() => import('@/containers/home-page/contacts-se
 
 export default function Home() {
 	return (
-		<>
+		<LazyMotion features={domAnimation}>
 			<Header />
 			<main>
 				<div className="lg:max-w-[1024px] lg:mx-auto overflow-x-hidden">
@@ -28,6 +29,6 @@ export default function Home() {
 				</div>
 			</main>
 			<Footer />
-		</>
+		</LazyMotion>
 	);
 }
