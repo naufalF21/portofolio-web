@@ -5,6 +5,7 @@ import Card from '@/components/Card';
 import projects from '@/data/projects';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import Reveal from '@/components/Reveal';
 import 'swiper/css/pagination';
 import 'swiper/css';
 import './styles.css';
@@ -13,12 +14,15 @@ export default function ProjectsSection() {
 	return (
 		<div className="text-white py-8 px-4 lg:px-0">
 			<div className="flex flex-row justify-between">
-				<div className="flex flex-row items-center gap-5 w-1/3">
-					<h2 className="text-3xl font-semibold">Projects</h2>
-					<hr className="hidden md:block w-full text-primary border" />
-				</div>
+				<Reveal>
+					<div className="flex flex-row items-center gap-5 w-96">
+						<h2 className="text-3xl font-semibold">Projects</h2>
+						<hr className="hidden md:block w-full text-primary border" />
+					</div>
+				</Reveal>
 				<Button text="View all" />
 			</div>
+
 			<Swiper
 				className="flex flex-col md:flex-row gap-10 justify-between mt-10"
 				spaceBetween={50}

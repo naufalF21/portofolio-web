@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
 				<link rel="manifest" href="/favicon/site.webmanifest" />
 			</head>
-			<body className={firaCode.className}>
+			<body className={`${firaCode.className} selection:bg-primary selection:text-secondary`}>
 				<NextTopLoader showSpinner={false} color="#C778DD" />
 				{children}
 			</body>
