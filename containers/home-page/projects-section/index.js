@@ -14,8 +14,8 @@ export default function ProjectsSection() {
 	return (
 		<div className="text-white py-8 px-4 lg:px-0">
 			<div className="flex flex-row justify-between">
-				<Reveal>
-					<div className="flex flex-row items-center gap-5 w-96">
+				<Reveal width="fit-content">
+					<div className="flex flex-row items-center gap-5 md:w-96">
 						<h2 className="text-3xl font-semibold">Projects</h2>
 						<hr className="hidden md:block w-full text-primary border" />
 					</div>

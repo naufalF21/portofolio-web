@@ -4,7 +4,6 @@ import { FaLinkedin } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
 import { MdOutlineLocalPhone } from 'react-icons/md';
-import Link from 'next/link';
 import Reveal from '../Reveal';
 import { m } from 'framer-motion';
 

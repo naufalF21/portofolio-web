@@ -25,8 +25,9 @@ export default function ContactsSection() {
 						have other requests or questions, please don&apos;t hesitate to contact me.
 					</p>
 				</Reveal>
-				<Reveal width="80rem">
-					<div className="border px-6 py-4 flex flex-col gap-5">
+
+				<div className="border px-6 py-4 flex flex-col gap-5">
+					<Reveal width="100%">
 						<h4 className="font-semibold">Contact me here</h4>
 						<Link href="#" className="flex flex-row items-center gap-3">
 							<IoIosMail size="32" className="text-gray hover:text-white" />
@@ -36,8 +37,8 @@ export default function ContactsSection() {
 							<MdOutlineLocalPhone size="32" className="text-gray hover:text-white" />
 							<span>+(62) 8961 7404 827</span>
 						</Link>
-					</div>
-				</Reveal>
+					</Reveal>
+				</div>
 			</div>
 		</div>
 	);
