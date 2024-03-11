@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Button from '@/components/Button';
+import Button from '@/components/button';
 import jumbotronImg from '@/public/images/jumbotron.png';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 
 export default function HeroSection() {
 	return (

@@ -2,14 +2,14 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Button from '../Button';
-import Reveal from '../Reveal';
+import Button from '../button';
+import Reveal from '../reveal';
 
 export default function Card({ image, technology, title, period, description }) {
 	const [isReadMore] = useState(true);
 
 	return (
-		<div className={`border text-white w-full lg:w-80 flex flex-col`}>
+		<div className={`border text-white w-full md:w-64 lg:w-80 flex flex-col`}>
 			<div className="divide-y">
 				<Reveal noSquare={true}>
 					<Image src={image} alt="card-image" className="bg-cover" />

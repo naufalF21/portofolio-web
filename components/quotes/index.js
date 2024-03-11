@@ -2,7 +2,7 @@
 
 import { FaQuoteLeft } from 'react-icons/fa';
 import { FaQuoteRight } from 'react-icons/fa';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 
 export default function Quotes() {
 	return (

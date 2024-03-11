@@ -6,7 +6,7 @@ import { IoLogoJavascript } from 'react-icons/io5';
 import { SiPhp } from 'react-icons/si';
 import logoMySQL from '@/public/images/logo-mysql.png';
 import devops from '@/data/devops';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 
 export default function SkillsSection() {
 	return (

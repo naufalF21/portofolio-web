@@ -3,7 +3,7 @@
 import { AiFillCaretRight } from 'react-icons/ai';
 import educations from '@/data/educations';
 import courses from '@/data/courses';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 
 export default function EducationSection() {
 	return (

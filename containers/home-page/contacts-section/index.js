@@ -3,7 +3,7 @@
 import { IoIosMail } from 'react-icons/io';
 import { MdOutlineLocalPhone } from 'react-icons/md';
 import Link from 'next/link';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 
 export default function ContactsSection() {
 	return (

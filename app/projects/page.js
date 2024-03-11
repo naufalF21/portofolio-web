@@ -1,8 +1,8 @@
 'use client';
 
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import Reveal from '@/components/Reveal';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import Reveal from '@/components/reveal';
 import ProjectsSection from '@/containers/projects-page/projects-section';
 import { LazyMotion, domAnimation } from 'framer-motion';
 

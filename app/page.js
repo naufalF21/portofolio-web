@@ -1,12 +1,12 @@
 'use client';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 import dynamic from 'next/dynamic';
 import { LazyMotion, domAnimation } from 'framer-motion';
 
 const HeroSection = dynamic(() => import('@/containers/home-page/hero-section'));
-const Quotes = dynamic(() => import('@/components/Quotes'));
+const Quotes = dynamic(() => import('@/components/quotes'));
 const ExperienceSection = dynamic(() => import('@/containers/home-page/experience-section'));
 const ProjectsSection = dynamic(() => import('@/containers/home-page/projects-section'));
 const EducationSection = dynamic(() => import('@/containers/home-page/education-section'));

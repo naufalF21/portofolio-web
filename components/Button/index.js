@@ -2,7 +2,7 @@
 
 import { HiArrowLongRight } from 'react-icons/hi2';
 import { motion } from 'framer-motion';
-import Reveal from '../Reveal';
+import Reveal from '../reveal';
 
 export default function Button({ text }) {
 	return (

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import nav from '@/data/nav';
-import AnimatedLink from '../AnimatedLink';
+import AnimatedLink from '../animated-link';
 
 export default function Navbar() {
 	const pathname = usePathname();

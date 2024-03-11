@@ -2,7 +2,7 @@
 
 import experience from '@/data/experience';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 
 export default function ExperienceSection() {
 	return (

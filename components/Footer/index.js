@@ -4,7 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import { FaGithub } from 'react-icons/fa';
 import { MdOutlineLocalPhone } from 'react-icons/md';
-import Reveal from '../Reveal';
+import Reveal from '../reveal';
 import { m } from 'framer-motion';
 
 export default function Footer() {

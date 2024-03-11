@@ -1,11 +1,11 @@
 'use client';
 
-import Button from '@/components/Button';
-import Card from '@/components/Card';
+import Button from '@/components/button';
+import Card from '@/components/card';
 import projects from '@/data/projects';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import Reveal from '@/components/Reveal';
+import Reveal from '@/components/reveal';
 import 'swiper/css/pagination';
 import 'swiper/css';
 import './styles.css';

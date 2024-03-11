@@ -1,6 +1,6 @@
 'use client';
 
-import Navbar from '../Navbar';
+import Navbar from '../navbar';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
